@@ -1,2 +1,2 @@
-#!/bin/bash
+#!/usr/bin/env bash
 git annex find --include '*' --format='${file} ${escaped_key}\n' |  sort -k2 | uniq --all-repeated=separate -f1 |   sed 's/ [^ ]*$//'
