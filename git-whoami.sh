@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 set -e
 
 get_email() {
@@ -16,9 +15,7 @@ get_name() {
 : ${GIT_AUTHOR_EMAIL=$(get_email)}
 : ${GIT_COMMITTER_EMAIL=$(get_email)}
 
-
-
-# author and commiter are most of the time the same, but they can differ..
+# author and commiter are the same most of the time, but they can differ..
 author="$GIT_AUTHOR_NAME <$GIT_AUTHOR_EMAIL>"
 commit="$GIT_COMMITTER_NAME <$GIT_COMMITTER_EMAIL>"
 
